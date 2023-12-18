@@ -20,17 +20,20 @@ function LoginUser() {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const res = await fetch("http://localhost:5000/api/loginuser/", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: await JSON.stringify({
-          email: email,
-          password: password,
-        }),
-      });
+      const res = await fetch(
+        "https://happy-feast.onrender.com/api/loginuser/",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: await JSON.stringify({
+            email: email,
+            password: password,
+          }),
+        }
+      );
       const data = await res.json();
       console.log(data);
       if (!data.success) {

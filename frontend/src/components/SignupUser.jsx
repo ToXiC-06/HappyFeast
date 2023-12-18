@@ -21,19 +21,22 @@ function SignupUser() {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const res = await fetch("http://localhost:5000/api/createuser/", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: await JSON.stringify({
-          name: name,
-          email: email,
-          password: password,
-          location: location,
-        }),
-      });
+      const res = await fetch(
+        "https://happy-feast.onrender.com/api/createuser/",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: await JSON.stringify({
+            name: name,
+            email: email,
+            password: password,
+            location: location,
+          }),
+        }
+      );
 
       const data = await res.json();
 

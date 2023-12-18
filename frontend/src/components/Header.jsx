@@ -40,11 +40,7 @@ function Header() {
             <Navbar.Brand href="#">
               <Link to="/">
                 <div className="ps-5 d-flex align-items-center justify-content-center">
-                  <img
-                    src="../../public/images/logo.png"
-                    height={50}
-                    width={50}
-                  />
+                  <img src="/images/logo.png" height={50} width={50} />
                   <h1 className="m-0 p-0">Happy Feast.</h1>
                 </div>
               </Link>

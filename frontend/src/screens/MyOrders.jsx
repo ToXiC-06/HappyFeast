@@ -11,7 +11,7 @@ function MyOrder() {
       try {
         setLoading(true);
         const fetchedData = await fetch(
-          "http://localhost:5000/api/myOrderData",
+          "https://happy-feast.onrender.com/api/myOrderData",
           {
             method: "POST",
             headers: {

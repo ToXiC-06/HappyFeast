@@ -12,13 +12,16 @@ export default function Home() {
   useEffect(function () {
     async function loadData() {
       try {
-        const res = await fetch("http://localhost:5000/api/foodData", {
-          method: "POST",
-          headers: {
-            Accept: "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await fetch(
+          "https://happy-feast.onrender.com/api/foodData",
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json, text/plain, */*",
+              "Content-Type": "application/json",
+            },
+          }
+        );
         const data = await res.json();
 
         setFoodItems(data.foodItems);

@@ -18,18 +18,21 @@ function Cart() {
 
   async function handleCheckOut() {
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("http://localhost:5000/api/orderData", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        order_data: data,
-        email: userEmail,
-        orderDate: new Date().toDateString(),
-      }),
-    });
+    let response = await fetch(
+      "https://happy-feast.onrender.com/api/orderData",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          order_data: data,
+          email: userEmail,
+          orderDate: new Date().toDateString(),
+        }),
+      }
+    );
     console.log(response.status);
     if (response.status === 200) {
       dispatch({ type: "DROP" });
