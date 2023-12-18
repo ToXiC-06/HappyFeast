@@ -7,7 +7,6 @@ const PORT = 5000;
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "http://localhost:5173",
     "https://happy-feast06.netlify.app/"
   );
   res.header(
