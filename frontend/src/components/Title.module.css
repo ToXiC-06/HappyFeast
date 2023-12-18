@@ -1,0 +1,16 @@
+.title {
+  padding: 30px;
+  background-color: rgb(34, 3, 75);
+}
+
+.title i {
+  font-family: "Ephesis", cursive;
+  font-size: 4rem;
+  cursor: default;
+  color: rgb(255, 153, 0);
+}
+
+.homeLogo {
+  float: left;
+  padding: 30px;
+}

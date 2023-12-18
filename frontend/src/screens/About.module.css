@@ -1,0 +1,29 @@
+.logo {
+  font-family: "Ephesis", cursive;
+  color: rgb(160, 2, 141);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.about {
+  height: 100vh;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 30px;
+  color: rgb(17, 17, 87);
+}
+
+body {
+  background-color: rgb(205, 168, 228);
+  position: relatives;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

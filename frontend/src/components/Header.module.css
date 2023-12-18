@@ -1,0 +1,44 @@
+.header {
+  background-color: rgb(34, 3, 75);
+  color: rgb(204, 166, 109);
+  height: 70px;
+}
+
+h1 {
+  font-family: "Ephesis", cursive;
+  color: rgb(255, 153, 0);
+  padding-top: 5px;
+}
+
+.nav {
+  color: rgb(220, 179, 116);
+  font-weight: 500;
+}
+.nav a {
+  margin-right: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgb(255, 0, 0);
+}
+.nav a:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 500;
+  transition: 1000ms;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 0);
+  background-color: rgb(21, 0, 255);
+}
+
+@media screen and (orientation: portrait) {
+}
